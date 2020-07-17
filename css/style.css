@@ -1,0 +1,21 @@
+body {
+    background-color: cadetblue;
+}
+
+h1 { 
+    text-align: center;
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 33%;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1)
+}
