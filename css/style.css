@@ -1,21 +1,80 @@
 body {
-    background-color: cadetblue;
+    background-color: black;
+    width: 100%;
 }
 
-h1 { 
+header {
+    background-color: #050505;
+    /* background-size: 100% 100%; */
+    width: 100%;
+    height: 33%;
+    margin: 0px 0px 10px 0px;
+}
+
+h1, h2 { 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
     text-align: center;
+    color: white;
+    background-image: url("/images/closeup-stone.jpg");
+    color:transparent;
+    background-size: 100% 100%;
+    -webkit-background-clip:text;
+    letter-spacing: 5px;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 9em;
+
+}
+
+h2 {
+    font-size: 7em;
+    margin: 0px;
 }
 
 .gallery {
-    margin: 10px 50px;
+    
 }
 .gallery img {
+    text-align: center;
     transition: 1s;
     padding: 15px;
-    width: 33%;
+    width: 95%;
+
 }
 
 .gallery img:hover {
     filter: grayscale(100%);
     transform: scale(1.1)
+}
+
+
+@media screen and (max-width: 740px) {
+    
+    h1 { 
+        font-size: 6em;
+    }
+    h2 {
+        font-size: 4em;
+    }
+}
+
+
+@media screen and (min-width: 820px) {
+    .gallery img {
+        height: 250px;
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .gallery img {
+        text-align: center;
+        margin: auto ;
+        transition: 1s;
+        padding: 15px;
+        width: 30%;
+    }
 }
