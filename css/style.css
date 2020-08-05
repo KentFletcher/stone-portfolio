@@ -18,8 +18,9 @@ h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     text-align: center;
-    color: white;
+    
     background-image: url("/images/closeup-stone.jpg");
+    color: white;
     color:transparent;
     background-size: 100% 100%;
     -webkit-background-clip:text;
@@ -46,12 +47,14 @@ article {
 a {
     margin: auto;
     height: auto;
-    align-self: center;    
+    align-self: center;  
+    flex-grow: 1;  
 }
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    
 }
 
 .gallery img:hover {
@@ -70,14 +73,6 @@ img {
     }
 }
 
-
-/* @media screen and (min-width: 820px) and (max-width: 1260){
-    .gallery img {
-        height: 250px;
-        width: 46%;
-    }
-} */
-
 @media screen and (min-width: 1220px) {
     .gallery {
         display: flex;
@@ -93,10 +88,13 @@ img {
 
     a {
         text-align: center; 
-        margin: auto ;
+        margin-left: 45px ;
         transition: 1s;
         padding: 15px;
-        width: 100%; 
+        flex-grow: 1;
+    }
+    a img {
+        height:50vh;
     }
 
 }
